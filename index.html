@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="contactContainer">  <!-- Contact Button / Page-->
+            <div class="darkButton">
+                <button onclick="darkmode()"></button>
+            </div>
+            <div class="contactWrapper">
+                <a class="contactText" href="">Contact</a>
+            </div>
+        </div>
+
+        <div class="heroTextContainer"> <!-- Hero Text -->
+            <h1 class="font">A Software Engineer called Louie...</h1>
+        </div>
+
+        <div class="locationContainer"> <!-- Location subtext-->
+            <h2 class="location">Based in Brighton, UK</h2>
+        </div>
+
+        <div class="textBox">
+
+        </div>
+    
+        <section class="skillsContainer">
+            <h2>Skills</h2>
+            <div class="skillBoxContainer">
+                <div class="skillBox">
+                    <img id="java" src="java.png" alt="">
+                </div>
+
+                <div class="skillBox" id="boxJS">
+                    <img id="javascript" src="javascript.png" alt="">
+                </div>
+
+                <div class="skillBox">
+                    <img id="figma" src="figma.png" alt="">
+                </div>
+
+                <div class="skillBox">
+                    <img id="aws" src="aws.png" alt="">
+                </div>
+        </div>
+
+        </section>
+    </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>  <!-- gsap import-->
+<script src="https://unpkg.com/split-type"></script> <!-- SplitType library import-->
+<script src="script.js"></script> <!-- javascript import -->
+</html>

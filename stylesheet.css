@@ -1,0 +1,175 @@
+body{
+    --show: solid red;
+    --showG: solid green;
+    display: block;
+}
+.wrapper{
+    min-width: 100%;
+    z-index: 1;
+}
+/* dark mode */
+
+.darkButton img{
+    position: absolute;
+    right: 95%;
+    width: 30px;
+}
+
+button:active{
+    transform: translateY(5px);
+    filter: invert(100%);
+    transition: 0.1;
+}
+.dark-mode{
+    background-color: black;
+    /* color: white; */ 
+    filter: invert(100%) hue-rotate(180deg);
+}
+
+button{
+    width: 50px;
+    height: 25px;
+    clip-path: circle(10px);
+    background-color: #b0b0b0;
+    position: absolute;
+    left: 0;
+}
+
+
+/* CONTACT */
+.contactText{
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif ;
+
+}
+.contactWrapper{
+    border-bottom: solid black;
+}
+.contactWrapper a:active{
+    border-bottom: solid black;
+}
+
+.contactContainer{
+   width: 100%;
+   /* border: var(--show); */
+   text-align: right;
+    
+}
+.contactWrapper{
+    /* border: var(--showG); */
+    position: relative;
+    left: 70%;
+    width: 100px;
+    margin: 10px;
+    font-size: 1.5rem;
+    /* text-decoration: none; */
+}
+
+/* HERO */
+.heroTextContainer{
+    display: flex;
+    /* position: absolute; */
+    --font: 'Poppins', sans-serif;
+    font-family: var(--font);
+    text-align: left;
+    font-size: 1.5em;
+    /* top: 250px; */
+    /* word-spacing: 20px; */
+    /* border: var(--show); */
+    margin-top: 250px;
+}
+
+/* LOCATION */
+.locationContainer{
+    position: relative;
+
+}
+.location{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+li{
+    list-style: none;
+}
+
+/* TEXT BOX */
+.textBox{
+    width: 100px;
+    /* border: var(--showG); */
+}
+
+
+/* SKILLS*/
+.skillsContainer{
+    margin-top: 125px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px ;
+    
+    z-index: 2;
+    height: 500px;
+}
+    .skillsContainer h2{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 2.3rem;
+        border-bottom: solid black;
+        border-radius: 3px;
+    }
+
+    
+.skillBoxContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.skillBox{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    width: 200px; 
+    /* border: var(--showG); */
+    /* background-color: #000000; */
+    box-shadow: 0px 0px 5px 3px #d2d1d1;
+    border-radius: 30px;
+    z-index: 2;
+}
+
+        /* SKILL IMAGES */
+        #java{
+            width: 200px;
+        }
+        #javascript{
+            margin: auto;
+            width: 150px;
+            border-radius: 15px;
+        }
+        #figma{
+            margin: auto;
+            height: 180px;
+        }
+        #aws{
+            margin: auto;
+
+            width: 120px;
+        }
+
+.skillBox:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 5px 5px #ebeaea;
+    transition: 0.1s;
+}
+.skillBox:active{
+    transform: translateY(10px);
+    box-shadow: 0px 0px 5px 5px #c9c9c9;
+    transition: 0.1s;
+    
+
+}
+
+
